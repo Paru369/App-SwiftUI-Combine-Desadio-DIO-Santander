@@ -4,7 +4,7 @@ TODO:
 <h1>
     <a href="https://www.dio.me/">
      <img align="center" width="40px" src="https://hermes.digitalinnovation.one/assets/diome/logo-minimized.png"></a>
-   <span> App Criptomoedas com VIP </h1> <h2> DIO Santander Bootcamp 2023</span>
+   <span> App iNEWs </h1> <h2> DIO Santander Bootcamp 2023</span>
 </h2>
        
 <p align="center"> <img align="center" width="150px" src="https://hermes.dio.me/tracks/61d57203-7c43-4d8d-a3f0-833faa2ce680.png"></p>
@@ -14,19 +14,19 @@ TODO:
 Repository developed for didactic purposes, with the availability of Bootcamp activities nodes provided by Santander and  [Digital Innovation One](https://www.dio.me/).
 
 ## ✅ Features
-- Cripto values in realtime
-- Charts by day, week, month...
-- Filters by coins, currency, time
-- Top 10, 100, 5000, 1000
+📱 Criação de um aplicativo de notícias em SwiftUI.
+🔄 Utilização do padrão MVVM (Model-View-ViewModel).
+🌐 Integração com uma API para obter dados de notícias.
+🚀 Uso do Combine para lidar com fluxos de dados assíncronos.
+📦 Gerenciamento de pacotes Swift para download de imagens de forma assíncrona.
+🧐 Tratamento de erros na aplicação.
+🤖 Uso de estados para controlar a interface do usuário com base nas respostas da API.
 
 
 ## 📱 Technologies and knowledges 
-- UIKIT 
-- VIP 
-- Storyboard
-- Modules
-- API CoinGecko
-- Package Charts 4.1
+- SwiftUI 
+- MVVM 
+- API: https://api.lil.software/news
 
 
 ## 📲 Images
