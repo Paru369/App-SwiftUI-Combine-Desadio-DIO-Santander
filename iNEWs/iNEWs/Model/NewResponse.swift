@@ -19,10 +19,17 @@ struct NewResponse: Codable {
 }
 
 // MARK: - Article
-struct Article: Codable {
+struct Article: Codable, Identifiable {
+    var id = UUID()
     let author: String?
     let url: String
     let source, title, description: String
     let image: String?
     let date: Date
+    
+    enum CondiingKeys: String, CodingKey {
+        case author, url, source, title
+        case articleDescription = "description"
+        case image, date
+    }
 }
