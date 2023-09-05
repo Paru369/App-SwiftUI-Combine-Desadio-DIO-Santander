@@ -13,6 +13,8 @@ TODO:
 </h2>
 Repository developed for didactic purposes, with the availability of Bootcamp activities nodes provided by Santander and  [Digital Innovation One](https://www.dio.me/).
 
+Aplicativo de notícias em SwiftUI, usando a arquitetura MVVM e a framework Combine do SwiftUI. O aplicativo busca dados de uma API de notícias e utiliza o Swift Package Manager para gerenciar o download de imagens de forma assíncrona. O desafio envolveu configuração de endpoints da API, tratamento de erros e implementação de um serviço para solicitar dados da API e uso de estados para controlar a exibição da interface do usuário com base nas respostas da API.
+
 ## ✅ Features
 📱 Criação de um aplicativo de notícias em SwiftUI. <br>
 🔄 Utilização do padrão MVVM (Model-View-ViewModel).<br>
