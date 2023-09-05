@@ -28,7 +28,7 @@ extension NewsAPI: APIBuilder {
     }
     
     var path: String {
-        return "/"
+        return "/news"
     }
     
     var urlRequest: URLRequest {
