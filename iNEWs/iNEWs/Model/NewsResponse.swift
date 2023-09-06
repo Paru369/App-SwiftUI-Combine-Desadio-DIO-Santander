@@ -22,10 +22,10 @@ struct NewsResponse: Codable {
 struct Article: Codable, Identifiable {
     var id = UUID()
     let author: String?
-    let url: String
-    let source, title, description: String
+    let url: String?
+    let source, title, articleDescription: String?
     let image: String?
-    let date: Date
+    let date: Date?
     
     enum CondiingKeys: String, CodingKey {
         case author, url, source, title
