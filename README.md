@@ -28,6 +28,8 @@ Aplicativo de notícias em SwiftUI, usando a arquitetura MVVM e a framework Comb
 - SwiftUI 
 - MVVM 
 - API: https://api.lil.software/news
+- JSON to struct: https://app.quicktype.io/
+- Package URLImage: https://github.com/dmytro-anokhin/url-image
 
 
 ## 📲 Images
