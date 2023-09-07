@@ -1,5 +1,5 @@
 //
-//  HomeView.swift
+//  NewsView.swift
 //  iNEWs
 //
 //  Created by Paulo Pinheiro on 9/4/23.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct HomeView: View {
+struct NewsView: View {
     
     @Environment(\.openURL) var openURL
    @StateObject var viewModel = ArticleViewModelImpl(service: ArticleServiceImpl())
@@ -45,8 +45,8 @@ struct HomeView: View {
     }
 }
 
-struct HomeView_Previews: PreviewProvider {
+struct NewsView_Previews: PreviewProvider {
     static var previews: some View {
-        HomeView()
+        NewsView()
     }
 }
