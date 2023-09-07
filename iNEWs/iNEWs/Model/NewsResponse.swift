@@ -14,22 +14,24 @@
 import Foundation
 
 // MARK: - FluctuationObject
-struct NewsResponse: Codable {
+struct ArticleResponse: Codable {
     let articles: [Article]
 }
 
-// MARK: - Article
 struct Article: Codable, Identifiable {
-    var id = UUID()
-    let author: String?
-    let url: String?
-    let source, title, articleDescription: String?
-    let image: String?
-    let date: Date?
-    
-    enum CondiingKeys: String, CodingKey {
-        case author, url, source, title
-        case articleDescription = "description"
-        case image, date
+
+    let id: UUID = UUID()
+    var author: String?
+    var url: String?
+    var source: String?
+    var title: String?
+    var welcomeDescription: String?
+    var image: String?
+    var date: Date?
+
+    enum CodingKeys: String, CodingKey {
+        case author, url, source, title, image, date
+        case welcomeDescription = "description"
     }
 }
+
