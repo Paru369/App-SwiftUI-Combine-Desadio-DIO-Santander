@@ -1,6 +1,5 @@
 # App-SwiftUI-Combine-Desafio-DIO-Santander
 
-TODO:
 <h1>
     <a href="https://www.dio.me/">
      <img align="center" width="40px" src="https://hermes.digitalinnovation.one/assets/diome/logo-minimized.png"></a>
@@ -11,7 +10,7 @@ TODO:
   <h2 align="center">
     Mobile iOS com Swift
 </h2>
-Estudo ingles e pensei em construir um APP com noticias variadas. 
+Estudo ingles e  construir um APP com noticias variadas. 
 
 Aplicativo de notícias em SwiftUI, usando a arquitetura MVVM e a framework Combine do SwiftUI. O aplicativo busca dados de uma API de notícias e utiliza o Swift Package Manager para gerenciar o download de imagens de forma assíncrona. O desafio envolveu configuração de endpoints da API, tratamento de erros e implementação de um serviço para solicitar dados da API e uso de estados para controlar a exibição da interface do usuário com base nas respostas da API.
 
@@ -39,14 +38,7 @@ Aplicativo de notícias em SwiftUI, usando a arquitetura MVVM e a framework Comb
 
 
 ## 📲 Images
-<img align="center" width="200px" src="https://github.com/Paru369/Criptomoedas-VIP/blob/main/images/001.gif">
-  <img align="center" width="200px" src="https://github.com/Paru369/App-SwiftUI-Combine-Desafio_Final_02-DIO-Santander/images/inews.gif">
-
-  <img align="center" width="200px" src="https://github.com/Paru369/App-SwiftUI-Combine-Desafio_Final_02-DIO-Santander/images/inews1.png">
-
-   <img align="center" width="200px" src="https://github.com/Paru369/Paru369/App-SwiftUI-Combine-Desafio_Final_02-DIO-Santander/images/inews2.png">
-   
-  <img align="center" width="200px" src="https://github.com/Paru369/App-SwiftUI-Combine-Desafio_Final_02-DIO-Santander/images/inewserror.png">
+<img align="center" width="200px" src="https://github.com/Paru369/App-SwiftUI-Combine-Desafio_Final_02-DIO-Santander/blob/main/images/inews.gif"> <img align="center" width="200px" src="https://github.com/Paru369/App-SwiftUI-Combine-Desafio_Final_02-DIO-Santander/blob/main/images/inews1.png"> <img align="center" width="200px" src="https://github.com/Paru369/App-SwiftUI-Combine-Desafio_Final_02-DIO-Santander/blob/main/images/inews2.png"> <img align="center" width="200px" src="https://github.com/Paru369/App-SwiftUI-Combine-Desafio_Final_02-DIO-Santander/blob/main/images/inewserror.png">
   
   
 ## ☑️ Requirements
