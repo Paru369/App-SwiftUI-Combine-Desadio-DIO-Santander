@@ -39,14 +39,14 @@ Aplicativo de notícias em SwiftUI, usando a arquitetura MVVM e a framework Comb
 
 
 ## 📲 Images
+<img align="center" width="200px" src="https://github.com/Paru369/Criptomoedas-VIP/blob/main/images/001.gif">
+  <img align="center" width="200px" src="https://github.com/Paru369/App-SwiftUI-Combine-Desafio_Final_02-DIO-Santander/images/inews.gif">
 
-  <img align="center" width="200px" src="https://github.com/Paru369/App-SwiftUI-Combine-Desafio_Final_02-DIO-Santander/images/inews.gif"></a>
+  <img align="center" width="200px" src="https://github.com/Paru369/App-SwiftUI-Combine-Desafio_Final_02-DIO-Santander/images/inews1.png">
 
-  <img align="center" width="200px" src="https://github.com/Paru369/App-SwiftUI-Combine-Desafio_Final_02-DIO-Santander/images/inews1.png"></a>
-
-   <img align="center" width="200px" src="https://github.com/Paru369/Paru369/App-SwiftUI-Combine-Desafio_Final_02-DIO-Santander/images/inews2.png"></a>
+   <img align="center" width="200px" src="https://github.com/Paru369/Paru369/App-SwiftUI-Combine-Desafio_Final_02-DIO-Santander/images/inews2.png">
    
-  <img align="center" width="200px" src="https://github.com/Paru369/App-SwiftUI-Combine-Desafio_Final_02-DIO-Santander/images/inewserror.png"></a>
+  <img align="center" width="200px" src="https://github.com/Paru369/App-SwiftUI-Combine-Desafio_Final_02-DIO-Santander/images/inewserror.png">
   
   
 ## ☑️ Requirements
