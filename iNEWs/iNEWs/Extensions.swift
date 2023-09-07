@@ -9,14 +9,14 @@ import Foundation
 
 
 extension Article {
+    
     static var dummyData: Article {
-        .init (
-        author: "Joseph Wulfsohn",
-        url: "https://www.foxnews.com/media/new-york-magazine-jonathan-chait-gina-carano-disney-hollywood-blacklist",
-        source: "Fox News",
-        title: "Disney's Gina Carano firing denounced as 'Hollywood Blacklist' against conservatives - Fox News",
-        articleDescription: "Conservative actress Gina Carano found rare support among liberals in the mainstream media following her firing from The Mandalorian over social media posts and being dropped by her agency UTA.",
-        image: "https://www.reuters.com/resizer/5c1f2tu36LVmk8t4TMOAMvLasxY=/1200x628/smart/filters:quality(80)/cloudfront-us-east-2.images.arcpublishing.com/reuters/ZO2TST2SFBIXRI7CA7KFKOUIUI.jpg",
-        date: Date ())
+        .init(author: "Adam Edelman, Monica Alba, Frank Thorp V, Alex Moe",
+              url: "https://www.nbcnews.com/politics/donald-trump/trump-impeachment-trial-day-2-kicks-case-against-him-n1257246",
+              source: "NBC News",
+              title: "Never-seen-before security video of Capitol riot to open Trump impeachment trial Day 2 - NBC News",
+              welcomeDescription: "Dems to open Day 2 trial arguments against Trump with 'never-seen-before\" riot footage",
+              image: "https://media2.s-nbcnews.com/j/newscms/2021_06/3448074/210205-impeachment-main-bar-cs-428p_fcaf4fdb04ac2ff3682a3783343f300b.nbcnews-fp-1200-630.jpg",
+              date: Date())
     }
 }

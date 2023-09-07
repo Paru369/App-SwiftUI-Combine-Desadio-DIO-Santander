@@ -9,18 +9,17 @@ import Foundation
 
 protocol APIBuilder {
     var urlRequest: URLRequest { get }
-    var baseURL: URL { get }
+    var baseUrl: URL { get }
     var path: String { get }
-    
 }
 
-enum NewsAPI {
+enum ArticleAPI {
     case getNews
 }
 
-extension NewsAPI: APIBuilder {
-    
-    var baseURL: URL {
+extension ArticleAPI: APIBuilder {
+
+    var baseUrl: URL {
         switch self {
         case .getNews:
             return URL(string: "https://api.lil.software")!
@@ -28,10 +27,17 @@ extension NewsAPI: APIBuilder {
     }
     
     var path: String {
-        return "/news"
+        switch self {
+        case .getNews:
+            return "/news"
+
+        }
     }
     
     var urlRequest: URLRequest {
-        return URLRequest(url: self.baseURL.appendingPathComponent(self.path))
+        switch self {
+        case .getNews:
+            return URLRequest(url: self.baseUrl.appendingPathComponent(self.path))
+        }
     }
 }

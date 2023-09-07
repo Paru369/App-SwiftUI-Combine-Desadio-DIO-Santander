@@ -8,40 +8,37 @@
 import Foundation
 import Combine
 
-protocol NewsService {
-    func request(from endpoint: NewsAPI) -> AnyPublisher<NewsResponse, APIError> 
-        
-    }
-
-
-struct NewsServiceImpl: NewsService {
-    func request(from endpoint: NewsAPI) -> AnyPublisher<NewsResponse, APIError> {
-        return URLSession
-            .shared
-            .dataTaskPublisher(for: endpoint.urlRequest)
-            .receive(on: DispatchQueue.main)
-            .mapError { _ in APIError.unknown}
-            .flatMap { data, response -> AnyPublisher<NewsResponse, APIError> in
-                
-                guard let response = response as? HTTPURLResponse else {
-                    return Fail(error: APIError.unknown).eraseToAnyPublisher()
-                }
-                
-                if (200...299).contains(response.statusCode) {
-                    let jsonDecoder = JSONDecoder()
-                    jsonDecoder.dateDecodingStrategy = .iso8601
-                    
-                    return Just(data)
-                        .decode(type: NewsResponse.self, decoder: jsonDecoder)
-                        .mapError { _ in APIError.decodingError }
-                        .eraseToAnyPublisher()
-                } else {
-                    return Fail(error: APIError.errorCode(response.statusCode)).eraseToAnyPublisher()
-                }
-            }
-        .eraseToAnyPublisher()
-        
-    }
+protocol ArticleService {
+     func request(from endpoint: ArticleAPI) -> AnyPublisher<ArticleResponse, APIError>
 }
 
+struct ArticleServiceImpl: ArticleService {
 
+    func request(from endpoint: ArticleAPI) -> AnyPublisher<ArticleResponse, APIError> {
+        
+        let jsonDecoder = JSONDecoder()
+        jsonDecoder.dateDecodingStrategy = .iso8601
+        
+        return URLSession.shared
+            .dataTaskPublisher(for: endpoint.urlRequest)
+            .receive(on: DispatchQueue.main)
+            .mapError { _ in .unknown }
+            .flatMap { data, response -> AnyPublisher<ArticleResponse, APIError> in
+
+                guard let response = response as? HTTPURLResponse else {
+                    return Fail(error: .unknown)
+                            .eraseToAnyPublisher()
+                }
+
+                if (200...299).contains(response.statusCode) {
+                    return Just(data)
+                        .decode(type: ArticleResponse.self, decoder: jsonDecoder)
+                        .mapError {_ in .decodingError}
+                        .eraseToAnyPublisher()
+                } else {
+                    return Fail(error: .errorCode(response.statusCode))
+                            .eraseToAnyPublisher()
+                }
+            }.eraseToAnyPublisher()
+    }
+}
