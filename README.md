@@ -24,6 +24,11 @@ Aplicativo de notícias em SwiftUI, usando a arquitetura MVVM e a framework Comb
 🤖 Uso de estados para controlar a interface do usuário com base nas respostas da API.
 <br>
 <br>
+
+## ✅ Extras
+📱 Splash Screen com animation e DispatchQueue <br>
+
+
 ## 📱 Technologies and knowledges 
 - SwiftUI 
 - MVVM 
